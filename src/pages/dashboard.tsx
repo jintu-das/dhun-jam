@@ -29,7 +29,7 @@ export default function Dashboard() {
 
   const { isPending: updatePriceLoading, mutate } = useMutation({
     mutationFn: updatePrice,
-    onSuccess(data) {
+    onSuccess() {
       toast.success("Price Updated");
     },
     onError(error) {
