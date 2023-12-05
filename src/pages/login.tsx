@@ -30,7 +30,7 @@ export default function Login() {
           <input
             className="input"
             placeholder="Username"
-            defaultValue="DJ@4"
+            // defaultValue="DJ@4"
             {...register("username", { required: true })}
           />
 
@@ -44,7 +44,7 @@ export default function Login() {
         <div className="flex flex-col gap-1">
           <input
             className="input"
-            defaultValue="Dhunjam@2023"
+            // defaultValue="Dhunjam@2023"
             placeholder="Password"
             {...register("password", { required: true })}
           />
