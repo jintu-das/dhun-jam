@@ -44,8 +44,7 @@ export default function useLogin() {
     },
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     onError(error: any) {
-      console.log(error?.response?.data?.ui_err_msg);
-      toast.error(error?.response?.data?.ui_err_msg);
+      toast.error(error?.response?.data?.ui_err_msg ?? "Something went wrong");
     },
   });
 

@@ -30,7 +30,6 @@ export default function Dashboard() {
   const { isPending: updatePriceLoading, mutate } = useMutation({
     mutationFn: updatePrice,
     onSuccess(data) {
-      console.log("data", data);
       toast.success("Price Updated");
     },
     onError(error) {
@@ -54,7 +53,6 @@ export default function Dashboard() {
   const disableField = watch("radio") === "true" ? false : true;
 
   const onSubmit: SubmitHandler<Formvalues> = (data) => {
-    console.log(data);
     mutate({
       category_6: data.customAmount,
       category_7: data.category1,
